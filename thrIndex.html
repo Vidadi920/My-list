@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Галерея</h1>
+        <div class='slideImg'>
+            <button class="btnSlide" onclick="backImg()">Назад</button>
+            <img class="imgSlide" src="1.png" id="slider" width="400px" height="200px">
+            <button class="btnSlide" onclick="forwImg()">Вперед</button>
+        </div>
+        <div>
+            <h2>Анимация</h2>
+        </div>
+        <div class="anime">
+            <button onclick="setInterval(move, 20)">Начнем</button>
+        <div id="container">
+            <div id="circle"></div>
+        </div>
+        </div>
+        <h2>Интерактивный Список</h2>
+        <div class="todo">
+            <input type="text" id="inpTask" class="inpText">
+            <button id="btnTask" class="btnAdd">Добавить пункт</button>
+        </div>
+            <ul id="ulTask" class="ul">
+             </ul>
+        <form action="secIndex.html">
+            <button class="btnList4" type="submit">Назад</button>
+        </form>
+        <form action="index.html">
+            <button class="btnList5" type="submit">На главную</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
