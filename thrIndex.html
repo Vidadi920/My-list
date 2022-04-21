@@ -9,17 +9,45 @@
 </head>
 <body>
     <div class="container">
-        <h1>Галерея</h1>
-        <div class='slideImg'>
-            <button class="btnSlide" onclick="backImg()">Назад</button>
-            <img class="imgSlide" src="1.png" id="slider" width="400px" height="200px">
-            <button class="btnSlide" onclick="forwImg()">Вперед</button>
-        </div>
+        <h1 id="#photo">Галерея</h1>
+        <div class="slideshow">
+
+            
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img class="img_slide" src="2.png" style="width:100%">
+              <div class="text">Front-end </div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img class="img_slide" src="3.png" style="width:100%">
+              <div class="text">Funny Capture</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img class="img_slide" src="4.png" style="width:100%">
+              <div class="text">Capture</div>
+            </div>
+          
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
         <div>
-            <h2>Анимация</h2>
+            <h2 id="#anima">Анимация</h2>
         </div>
         <div class="anime">
-            <button onclick="setInterval(move, 20)">Начнем</button>
+            <button class="animebtn" onclick="setInterval(move, 20)">GO</button>
         <div id="container">
             <div id="circle"></div>
         </div>
